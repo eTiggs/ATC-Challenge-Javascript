@@ -9,3 +9,8 @@ This software is great; it combines a great user experience with complex technic
 2. From the requirements listed above, devise a set of user stories that describe the functionality that the client has requested.
 
 ![Image of Kanban board](image.png)
+
+![Statement 1](image-1.png)
+![Statement 2](image-2.png)
+![Statement 3](image-3.png)
+![Statement 4](image-4.png)
