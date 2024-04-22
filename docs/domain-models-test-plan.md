@@ -14,3 +14,5 @@ This software is great; it combines a great user experience with complex technic
 ![Statement 2](image-2.png)
 ![Statement 3](image-3.png)
 ![Statement 4](image-4.png)
+
+3. From these user stories, create a domain model to describe how the objects will use messages to communicate with one another.
