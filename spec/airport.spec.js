@@ -175,3 +175,35 @@ console.log(`==================`);
 
 // Clean Up
 afterEach();
+
+
+
+console.log(`Test 6`);
+console.log(`==================`);
+console.log(
+    `Cannot land planes over maximum capacity`
+);
+// Arrange
+testPlane = "EthanAir 1";
+let testPlane2 = "EthanAir 2";
+let testPlane3 = "EthanAir 3";
+testAirport = new Airport();
+expected = true;
+
+// Act
+testAirport.landPlane(testPlane);
+testAirport.landPlane(testPlane2);
+testAirport.landPlane(testPlane3);
+
+actual = testAirport.getPlanes().length === 2;
+
+// Assert
+result = assertEquals(actual, expected);
+
+// Report
+console.log(result ? `Pass` : `Fail`);
+!result && console.log(`Expected: ${expected}; Actual: ${actual}`);
+console.log(`==================`);
+
+// Clean Up
+afterEach();
