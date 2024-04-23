@@ -192,6 +192,39 @@ expected = true;
 
 // Act
 testAirport.landPlane(testPlane);
+testAirport.landPlane(testPlane2);
+testAirport.landPlane(testPlane3);
+
+actual = testAirport.getMaxCapacity() === 2;
+
+
+// Assert
+result = assertEquals(actual, expected);
+
+// Report
+console.log(result ? `Pass` : `Fail`);
+!result && console.log(`Expected: ${expected}; Actual: ${actual}`);
+console.log(`==================`);
+
+// Clean Up
+afterEach();
+
+
+
+console.log(`Test 7`);
+console.log(`==================`);
+console.log(
+    `I can change the max capacity of the airport`
+);
+// Arrange
+testPlane = "EthanAir 1";
+testPlane2 = "EthanAir 2";
+testPlane3 = "EthanAir 3";
+testAirport = new Airport();
+expected = true;
+
+// Act
+testAirport.landPlane(testPlane);
 
 testAirport.setMaxCapacity(1);
 
