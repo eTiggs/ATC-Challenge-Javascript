@@ -120,3 +120,31 @@ console.log(`==================`);
 
 // Clean Up
 afterEach();
+
+
+
+console.log(`Test 5`);
+console.log(`==================`);
+console.log(
+    `Check if a the plane is at the airport`
+);
+// Arrange
+testPlane = "EthanAir 1";
+testAirport = new Airport();
+expected = true;
+
+// Act
+testAirport.landPlane(testPlane);
+actual = testAirport.getPlanes().includes(testPlane);
+testAirport.takeOffPlane(testPlane);
+
+// Assert
+result = assertEquals(actual, expected);
+
+// Report
+console.log(result ? `Pass` : `Fail`);
+!result && console.log(`Expected: ${expected}; Actual: ${actual}`);
+console.log(`==================`);
+
+// Clean Up
+afterEach();
