@@ -16,7 +16,7 @@ console.log(
     `Check if the plane can land at the airport`
 );
 // Arrange
-let testPlane = new Plane('EthanAir 1');
+let testPlane = "EthanAir 1";
 let testAirport = new Airport();
 let expected = 1;
 
@@ -44,7 +44,7 @@ console.log(
     `Check if the plane is already in the airport`
 );
 // Arrange
-testPlane = new Plane('EthanAir 1');
+testPlane = "EthanAir 1";
 testAirport = new Airport();
 expected = testPlane;
 
@@ -91,3 +91,5 @@ console.log(`==================`);
 
 // Clean Up
 afterEach();
+
+
