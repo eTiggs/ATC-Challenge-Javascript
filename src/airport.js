@@ -1,5 +1,6 @@
 export default class Airport {
     #planes = [];
+    #maxCapacity = 2;
 
     constructor(plane) {
         this.#planes = [plane];
@@ -10,7 +11,7 @@ export default class Airport {
     }
     
     landPlane(plane) {
-        if (plane !== null) {
+        if (plane !== null && this.#planes < this.#maxCapacity) {
             this.#planes.push(plane);
         }
     }
