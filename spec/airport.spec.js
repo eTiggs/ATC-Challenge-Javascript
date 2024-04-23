@@ -302,3 +302,35 @@ console.log(`==================`);
 
 // Clean Up
 afterEach();
+
+
+
+console.log(`Test 10`);
+console.log(`==================`);
+console.log(
+    `I cannot change the capacity to a number outside the bounds of 0 to 150`
+);
+// Arrange
+testPlane = "EthanAir 1";
+testPlane2 = "EthanAir 2";
+testAirport = new Airport();
+expected = false;
+
+// Act
+testAirport.landPlane(testPlane);
+testAirport.landPlane(testPlane2);
+
+testAirport.setMaxCapacity(151);
+
+actual = testAirport.getMaxCapacity() === 151;
+
+// Assert
+result = assertEquals(actual, expected);
+
+// Report
+console.log(result ? `Pass` : `Fail`);
+!result && console.log(`Expected: ${expected}; Actual: ${actual}`);
+console.log(`==================`);
+
+// Clean Up
+afterEach();

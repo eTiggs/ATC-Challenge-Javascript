@@ -23,7 +23,7 @@ export default class Airport {
     }
 
     setMaxCapacity(maxCapacity) {
-        if (this.#planes.length < maxCapacity) {
+        if (this.#planes.length < maxCapacity && maxCapacity < 150) {
             this.#maxCapacity = maxCapacity;
         }
     }
