@@ -10,4 +10,8 @@ export default class Airport {
             this.#planes.push(plane);
         }
     }
+
+    takeOffPlane(plane) {
+        return false;
+    }
 }
