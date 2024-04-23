@@ -21,4 +21,12 @@ export default class Airport {
             this.#planes.pop(plane);
         }
     }
+
+    setMaxCapacity(maxCapacity) {
+        this.#maxCapacity = maxCapacity;
+    }
+
+    getMaxCapacity() {
+        return this.#maxCapacity;
+    }
 }

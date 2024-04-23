@@ -192,10 +192,10 @@ expected = true;
 
 // Act
 testAirport.landPlane(testPlane);
-testAirport.landPlane(testPlane2);
-testAirport.landPlane(testPlane3);
 
-actual = testAirport.getPlanes().length === 2;
+testAirport.setMaxCapacity(1);
+
+actual = testAirport.getMaxCapacity() === 1;
 
 // Assert
 result = assertEquals(actual, expected);
