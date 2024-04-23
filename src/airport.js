@@ -12,7 +12,9 @@ export default class Airport {
     }
     
     landPlane(plane) {
-        if (plane !== null && this.#planes < this.#maxCapacity) {
+        if (plane !== null
+            && this.#planes < this.#maxCapacity
+            && !this.#isStormy) {
             this.#planes.push(plane);
         }
     }
