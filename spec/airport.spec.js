@@ -93,3 +93,30 @@ console.log(`==================`);
 afterEach();
 
 
+
+console.log(`Test 4`);
+console.log(`==================`);
+console.log(
+    `Check if a plane can leave the airport`
+);
+// Arrange
+testPlane = "EthanAir 1";
+testAirport = new Airport();
+expected = false;
+
+// Act
+testAirport.landPlane(testPlane);
+testAirport.takeOffPlane(testPlane);
+
+actual = testAirport.getPlanes().includes(testPlane);
+
+// Assert
+result = assertEquals(actual, expected);
+
+// Report
+console.log(result ? `Pass` : `Fail`);
+!result && console.log(`Expected: ${expected}; Actual: ${actual}`);
+console.log(`==================`);
+
+// Clean Up
+afterEach();
