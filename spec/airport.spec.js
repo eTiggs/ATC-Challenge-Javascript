@@ -281,18 +281,16 @@ console.log(
 // Arrange
 testPlane = "EthanAir 1";
 testPlane2 = "EthanAir 2";
-testPlane3 = "EthanAir 3";
 testAirport = new Airport();
 expected = true;
 
 // Act
 testAirport.landPlane(testPlane);
 testAirport.landPlane(testPlane2);
-testAirport.landPlane(testPlane3);
 
-testAirport.setMaxCapacity(2);
+testAirport.setMaxCapacity(1);
 
-actual = testAirport.getPlanes().length === 3;
+actual = testAirport.getPlanes().length === 2;
 
 // Assert
 result = assertEquals(actual, expected);
