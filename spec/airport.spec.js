@@ -1,5 +1,6 @@
 import Airport from '../src/airport.js';
 import Plane from '../src/plane.js';
+import { assertEquals } from '../spec/test-framework.js';
 
 let airport;
 let plane;
@@ -19,12 +20,12 @@ console.log(
 // Arrange
 let testPlane = new Plane('EthanAir 1');
 let testAirport = new Airport();
-let expected = testAirport.getPlanes().length + 1;
+let expected = 1;
 
 // Act
 testAirport.landPlane(testPlane);
 
-actual = testAirport.getPlanes.length;
+actual = testAirport.getPlanes().length;
 // Assert
 
 result = assertEquals(actual, expected);

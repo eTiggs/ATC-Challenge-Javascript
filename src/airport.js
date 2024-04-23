@@ -2,6 +2,10 @@ export default class Airport {
     #planes = [];
 
     getPlanes() {
-        return 0;
+        return this.#planes;
+    }
+    
+    landPlane(plane) {
+        this.#planes.push(plane);
     }
 }
