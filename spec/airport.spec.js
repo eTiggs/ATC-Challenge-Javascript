@@ -19,7 +19,7 @@ console.log(
 // Arrange
 let testPlane = new Plane('EthanAir 1');
 let testAirport = new Airport();
-let expected = airport.getPlanes.length + 1;
+let expected = testAirport.getPlanes().length + 1;
 
 // Act
 testAirport.landPlane(testPlane);
