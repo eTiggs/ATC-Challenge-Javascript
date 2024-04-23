@@ -158,7 +158,7 @@ console.log(
 );
 // Arrange
 testPlane = null;
-testAirport = new Airport();
+testAirport = new Airport(testPlane);
 expected = true;
 
 // Act

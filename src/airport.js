@@ -16,7 +16,7 @@ export default class Airport {
     }
 
     takeOffPlane(plane) {
-        if (this.#planes.includes(plane)) {
+        if (this.#planes.includes(plane) && plane !== null) {
             this.#planes.pop(plane);
         }
     }
