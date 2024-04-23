@@ -36,6 +36,8 @@ console.log(`==================`);
 // Clean Up
 afterEach();
 
+
+
 console.log(`Test 2`);
 console.log(`==================`);
 console.log(
@@ -51,6 +53,33 @@ testAirport.landPlane(testPlane);
 
 actual = testAirport.getPlanes()[0];
 
+// Assert
+result = assertEquals(actual, expected);
+
+// Report
+console.log(result ? `Pass` : `Fail`);
+!result && console.log(`Expected: ${expected}; Actual: ${actual}`);
+console.log(`==================`);
+
+// Clean Up
+afterEach();
+
+
+
+console.log(`Test 3`);
+console.log(`==================`);
+console.log(
+    `Ensure I cannot land null at the airport`
+);
+// Arrange
+testPlane = new Plane(null);
+testAirport = new Airport();
+expected = false;
+
+// Act
+testAirport.landPlane(testPlane);
+
+actual = testAirport.getPlanes().includes(testPlane);
 // Assert
 result = assertEquals(actual, expected);
 
