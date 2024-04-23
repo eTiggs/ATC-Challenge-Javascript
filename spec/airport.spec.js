@@ -399,10 +399,9 @@ console.log(
     `If the weather is stormy, don't allow a plane to take off`
 );
 // Arrange
-testAirport = new Airport();
 testPlane = "EthanAir 1";
+testAirport = new Airport(testPlane);
 
-testAirport.landPlane(testPlane);
 testAirport.takeOffPlane(testPlane);
 expected = true;
 
