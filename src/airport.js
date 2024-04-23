@@ -12,6 +12,6 @@ export default class Airport {
     }
 
     takeOffPlane(plane) {
-        return false;
+        this.#planes.pop(plane);
     }
 }
