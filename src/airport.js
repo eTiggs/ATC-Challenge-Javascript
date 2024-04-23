@@ -1,6 +1,7 @@
 export default class Airport {
     #planes = [];
     #maxCapacity = 2;
+    #isStormy = true;
 
     constructor(plane) {
         this.#planes = [plane];
@@ -30,5 +31,9 @@ export default class Airport {
 
     getMaxCapacity() {
         return this.#maxCapacity;
+    }
+
+    isStormy() {
+        return this.#isStormy;
     }
 }
