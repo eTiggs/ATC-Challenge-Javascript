@@ -240,3 +240,33 @@ console.log(`==================`);
 
 // Clean Up
 afterEach();
+
+
+
+console.log(`Test 8`);
+console.log(`==================`);
+console.log(
+    `Capacity will track plane count`
+);
+// Arrange
+testPlane = "EthanAir 1";
+testPlane2 = "EthanAir 2";
+testAirport = new Airport();
+expected = true;
+
+// Act
+testAirport.landPlane(testPlane);
+testAirport.landPlane(testPlane2);
+
+actual = testAirport.getPlanes().length === 2;
+
+// Assert
+result = assertEquals(actual, expected);
+
+// Report
+console.log(result ? `Pass` : `Fail`);
+!result && console.log(`Expected: ${expected}; Actual: ${actual}`);
+console.log(`==================`);
+
+// Clean Up
+afterEach();
