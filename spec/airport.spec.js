@@ -334,3 +334,29 @@ console.log(`==================`);
 
 // Clean Up
 afterEach();
+
+
+
+console.log(`Test 11`);
+console.log(`==================`);
+console.log(
+    `Check if the weather is stormy`
+);
+// Arrange
+testAirport = new Airport();
+expected = true;
+
+// Act
+
+actual = testAirport.isStormy();
+
+// Assert
+result = assertEquals(actual, expected);
+
+// Report
+console.log(result ? `Pass` : `Fail`);
+!result && console.log(`Expected: ${expected}; Actual: ${actual}`);
+console.log(`==================`);
+
+// Clean Up
+afterEach();
