@@ -6,6 +6,8 @@ export default class Airport {
     }
     
     landPlane(plane) {
-        this.#planes.push(plane);
+        if (plane !== null) {
+            this.#planes.push(plane);
+        }
     }
 }

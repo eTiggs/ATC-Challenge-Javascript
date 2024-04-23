@@ -72,7 +72,7 @@ console.log(
     `Ensure I cannot land null at the airport`
 );
 // Arrange
-testPlane = new Plane(null);
+testPlane = null
 testAirport = new Airport();
 expected = false;
 
@@ -80,6 +80,7 @@ expected = false;
 testAirport.landPlane(testPlane);
 
 actual = testAirport.getPlanes().includes(testPlane);
+
 // Assert
 result = assertEquals(actual, expected);
 
