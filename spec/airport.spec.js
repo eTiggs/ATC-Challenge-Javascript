@@ -148,3 +148,30 @@ console.log(`==================`);
 
 // Clean Up
 afterEach();
+
+
+
+console.log(`Test 6`);
+console.log(`==================`);
+console.log(
+    `Ensure that I cannot take off a null plane`
+);
+// Arrange
+testPlane = null;
+testAirport = new Airport();
+expected = true;
+
+// Act
+testAirport.takeOffPlane(testPlane);
+actual = testAirport.getPlanes().includes(testPlane);
+
+// Assert
+result = assertEquals(actual, expected);
+
+// Report
+console.log(result ? `Pass` : `Fail`);
+!result && console.log(`Expected: ${expected}; Actual: ${actual}`);
+console.log(`==================`);
+
+// Clean Up
+afterEach();

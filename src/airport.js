@@ -1,6 +1,10 @@
 export default class Airport {
     #planes = [];
 
+    constructor(plane) {
+        this.#planes = [plane];
+    }
+
     getPlanes() {
         return this.#planes;
     }
