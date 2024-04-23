@@ -358,5 +358,35 @@ console.log(result ? `Pass` : `Fail`);
 !result && console.log(`Expected: ${expected}; Actual: ${actual}`);
 console.log(`==================`);
 
+
+
+// Clean Up
+afterEach();
+
+console.log(`Test 12`);
+console.log(`==================`);
+console.log(
+    `If the weather is stormy, don't allow a plane to land`
+);
+// Arrange
+testAirport = new Airport();
+testPlane = "EthanAir 1";
+
+testAirport.landPlane(testPlane);
+
+expected = false;
+
+// Act
+
+actual = testAirport.getPlanes().includes(testPlane);
+
+// Assert
+result = assertEquals(actual, expected);
+
+// Report
+console.log(result ? `Pass` : `Fail`);
+!result && console.log(`Expected: ${expected}; Actual: ${actual}`);
+console.log(`==================`);
+
 // Clean Up
 afterEach();
