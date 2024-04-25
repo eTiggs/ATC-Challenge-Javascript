@@ -12,7 +12,7 @@ Using intricate weather sensor technology patented by WeatherSensorsInc, this so
 
 <h3> ** The risks associated with the software (Remember to include the "WHY" as well as the "WHAT") ** </h3>
  
-
+Being a safety-critical industry, this software should not be used as the sole operation of the tower, however, this system has been through such rigorous testing that it is not expected to fail. With the power of this software in your hands, there is a risk you will want to hire less skilled, cheaper labour, which we do not think you should. This software is great and can make anyone an expert at the job, but it is important that if it fails in any aspect, you will need a skilled employee to take over. This software is also dependent on further updates from us to maximise its uptime, therefor if you were to try and cut costs and stop paying our SaaS maintenance fee, there would be an ever-increasing risk for failure, which I'm sure no small fee could be worth more than the lives of the millions of passengers you see daily.
 
 2. From the requirements listed above, devise a set of user stories that describe the functionality that the client has requested.
 
