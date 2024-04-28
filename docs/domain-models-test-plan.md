@@ -16,13 +16,20 @@ Being a safety-critical industry, this software should not be used as the sole o
 
 2. From the requirements listed above, devise a set of user stories that describe the functionality that the client has requested.
 
-![Image of Kanban board](image.png)
 
-![Statement 1](image-1.png)
-![Statement 2](image-2.png)
-![Statement 3](image-3.png)
-![Statement 4](image-4.png)
+![Kanban Board](https://github.com/digital-futures-academy-se-2404-a/challenge-1-airport-eTiggs/assets/63173961/80d52865-664b-4dc6-ae13-ae4b8c1ef44a)
+
+
+![Statement 1 Tests](https://github.com/digital-futures-academy-se-2404-a/challenge-1-airport-eTiggs/assets/63173961/24c0dd5a-031a-462c-af2e-c2984b08c5b2)
+
+![Statement 2 Tests](https://github.com/digital-futures-academy-se-2404-a/challenge-1-airport-eTiggs/assets/63173961/b48549b7-2a0c-4f01-8825-4e5eff8923aa)
+
+![Statement 3 Tests](https://github.com/digital-futures-academy-se-2404-a/challenge-1-airport-eTiggs/assets/63173961/3d1e1f94-5ec1-498b-8b6a-6804cce263f4)
+
+![Statement 4 Tests](https://github.com/digital-futures-academy-se-2404-a/challenge-1-airport-eTiggs/assets/63173961/f8906f8b-1bea-4064-84ca-d860a3b25039)
+
 
 3. From these user stories, create a domain model to describe how the objects will use messages to communicate with one another.
 
-![Domain Model](image-5.png)
+![Domain Models](https://github.com/digital-futures-academy-se-2404-a/challenge-1-airport-eTiggs/assets/63173961/2e94b150-36a3-420f-81d4-d0824157e052)
+
