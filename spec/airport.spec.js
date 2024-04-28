@@ -1,4 +1,3 @@
-import Airport from '../src/airport.js';
 import Plane from '../src/plane.js';
 import { assertEquals } from '../spec/test-framework.js';
 
