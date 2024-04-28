@@ -1,10 +1,12 @@
 export default class Airport {
     #planes = [];
-    #maxCapacity = 2;
-    #isStormy = true;
+    #maxCapacity = 10;
+    #isStormy = false;
 
     constructor(plane) {
-        this.#planes = [plane];
+        if (plane !== undefined && plane !== null) {
+            this.#planes.push(plane);
+        }
     }
 
     getPlanes() {
@@ -12,18 +14,21 @@ export default class Airport {
     }
     
     landPlane(plane) {
-        if (plane !== null
-            && this.#planes < this.#maxCapacity
-            && !this.#isStormy) {
-            this.#planes.push(plane);
-        }
+    if (plane !== null
+        && this.#planes.length < this.#maxCapacity
+        && !this.#isStormy) {
+        this.#planes.push(plane);
     }
+}
 
     takeOffPlane(plane) {
         if (this.#planes.includes(plane)
             && plane !== null
             && !this.#isStormy) {
-            this.#planes.pop(plane);
+            const planeIndex = this.#planes.indexOf(plane);
+            if (plane !== -1) {
+                this.#planes.splice(planeIndex, 1);
+            }
         }
     }
 
@@ -39,5 +44,9 @@ export default class Airport {
 
     isStormy() {
         return this.#isStormy;
+    }
+
+    setStormy(weather) {
+        this.#isStormy = weather;
     }
 }
